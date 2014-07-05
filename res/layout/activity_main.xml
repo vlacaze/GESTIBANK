@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<GridLayout 
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="fr.iut.csid.projet.gestibank.activity.MainActivity"
+    tools:ignore="MergeRootFrame" 
+    android:columnCount="1"
+    android:rowCount="6"
+    android:scrollbars="vertical|horizontal">
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="20dp"
+        android:layout_row="0"
+        android:text="Gestion de budget personnel"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+	<Button
+	    android:id="@+id/bt_compte"
+	    android:layout_column="0"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:layout_row="1"
+		android:layout_width="match_parent"
+		android:layout_margin="20dp"
+	    android:text="Mon compte" />
+        
+	<Button
+	    android:id="@+id/bt_budget"
+		android:layout_column="0"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_row="2"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+	    android:text="Mon budget" />
+	
+<!-- 	<Button
+	    android:id="@+id/bt_previ"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:text="Mes opérations prévisionnelles" /> -->
+	
+	<Button
+	    android:id="@+id/bt_budget_param"
+		android:layout_column="0"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_row="3"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+	    android:text="Paramétrer le budget" />
+	
+	<Button
+	    android:id="@+id/bt_compte_param"
+	    android:layout_column="0"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_row="4"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+	    android:text="Paramétrer le compte" />
+	
+	<Button
+	    android:id="@+id/bt_quitter"
+	    android:layout_column="0"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_row="5"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+	    android:text="Quitter" />
+</GridLayout>
+</ScrollView>

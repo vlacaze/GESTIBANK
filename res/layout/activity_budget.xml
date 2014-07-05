@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<GridLayout 
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.iut.csid.projet.gestibank.activity.budget.BudgetActivity"
+    tools:ignore="MergeRootFrame" 
+    android:scrollbars="vertical|horizontal"
+    android:columnCount="1"
+    android:rowCount="7">
+        
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="20dp"
+        android:layout_row="0"
+        android:text="ETAT DES BUDGETS"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+	<TextView
+        android:id="@+id/tv_alimentaire"
+        android:layout_column="0"
+		android:layout_row="1"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Alimentaire :" />
+	
+    <TextView
+        android:id="@+id/tv_divers"
+        android:layout_column="0"
+		android:layout_row="2"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Divers :" />
+    
+    <TextView
+        android:id="@+id/tv_loisirs"
+        android:layout_column="0"
+		android:layout_row="3"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Loisirs :" />
+    
+    <TextView
+        android:id="@+id/tv_transports"
+        android:layout_column="0"
+		android:layout_row="4"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Transports" />
+    
+    <TextView
+        android:id="@+id/tv_vetements"
+        android:layout_column="0"
+		android:layout_row="5"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Vêtements :" />
+	
+    <Button
+        android:id="@+id/bt_budgetReturn"
+		android:layout_column="0"
+		android:layout_row="6"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Retour" />
+</GridLayout>
+</ScrollView>
